@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/cannon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <title>The Game</title>
+</head>
+<body>
+    <div class="Game_container">
+        <div class="computer">
+            <h1>COMPUTER</h1>
+            <button><img src="resources/Rock.png" alt=""></button>
+            <button><img src="resources/Paper.png" alt=""></button>
+            <button><img src="resources/Sissor.png" alt=""></button>
+        </div>
+        <div class="user">
+            <h1>YOU </h1>
+            <button onclick="userData(1)"><img src="resources/Rock.png" alt=""></button>
+            <button onclick="userData(2)"><img src="resources/Paper.png" alt=""></button>
+            <button onclick="userData(3)"><img src="resources/Sissor.png" alt=""></button>
+        </div>
+        <div id="ans" class="ans">
+            <h2>MATCH:<span id="matchCount"></span></h2>
+            <h2>WIN:<span id="winCount"></span></h2>
+            <h2>LOOSE:<span id="looseCount"></span></h2>
+            <h2>TIE:<span id="tieCount"></span></h2>
+            <h1 id="answer"></h1>
+            <div class="comAns" id="comAns">
+                <img src="resources/Rock.png" id="c1" alt="">
+                <img src="resources/Paper.png" id="c2" alt="">
+                <img src="resources/Sissor.png" id="c3" alt="">
+            </div>
+            <div class="userAns" id="userAns">
+                <img src="resources/Rock.png" id="u1" alt="">
+                <img src="resources/Paper.png" id="u2" alt="">
+                <img src="resources/Sissor.png" id="u3" alt="">
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="reset()">RESTART AGAIN</button>
+        </div>
+    </div>
+
+    <!--ANIMATION FIGHT-->
+
+    <div class="game" >
+        <h1 id="fight">FIGHT</h1>
+        <div class="character1">
+            <img src="resources/thadimadu.png" alt="thadimadu" id="character1">
+            <img src="resources/boom.png" alt="boom" id="boom1">
+            <img src="resources/10.png" alt="10" id="minus1">
+            <img src="resources/adiyalDead.png" alt="dead" id="dead2">
+
+        </div>
+        <div class="character2">
+            <img src="resources/adiyal.png" alt="adiyal" id="character2">
+            <img src="resources/boom.png" alt="boom" id="boom2">
+            <img src="resources/10.png" alt="10" id="minus2">
+            <img src="resources/adiyalDead.png" alt="dead" id="dead1">
+        </div>
+    </div>
+    <footer>
+        <img src="resources/land.png" alt="land">
+    </footer>
+    <section class="final" id="win">
+        
+        <h1>YOU WON!!</h1>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
